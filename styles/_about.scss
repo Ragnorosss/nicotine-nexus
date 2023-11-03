@@ -1,0 +1,22 @@
+.about {
+    background-image: url(/about_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 60px 0;
+    padding: 40px;
+
+    &__title{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+   
+
+    // .about__content
+
+    &__content {
+     width: 100%;
+     max-width: 890px;
+     margin: 0 auto;
+    }
+}

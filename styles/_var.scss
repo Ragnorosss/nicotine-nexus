@@ -1,0 +1,36 @@
+// colors
+$backgroundColor:#242323;
+$default-text:#FFFFFF;
+$primaryColor:#FF00B8;
+// Media request
+$mobile-width: 768px;
+$var-tablet-width:890px;
+$tablet-width: 1024px;
+$laptop-width: 1440px;
+$coputer-width: 1920px;
+
+@mixin logo-styles {
+    animation: flicker 1.5s infinite alternate;
+    color: #fff;  
+    font-size: clamp(1.125rem, 0.9rem + 1.125vw, 2.25rem);
+    @keyframes flicker {
+  
+        0%, 18%, 22%, 25%, 53%, 57%, 100% {
+      
+            text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 20px $primaryColor,
+            0 0 50px $primaryColor,
+            0 0 70px $primaryColor,
+            0 0 750px $primaryColor,
+            0 0 80px $primaryColor;
+        
+        }
+        
+        20%, 24%, 55% {        
+            text-shadow: none;
+        }    
+      }
+}
