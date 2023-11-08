@@ -16,6 +16,12 @@
         align-items: center;
         padding-top: 250px;
         justify-content: space-between;
+        > img {
+            width: 100%;
+            max-width: 440px;
+            height: auto;
+            object-fit: cover;
+        }
     }
 
     &__id{
