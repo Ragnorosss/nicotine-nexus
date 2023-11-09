@@ -36,33 +36,18 @@
    
 }
 .social {
-    position: relative;
     display: flex;
-    gap: 80px;
+    justify-content: space-between;
     transform: rotate(90deg);
     color: #FFF;
     font-size: clamp(0.75rem, 0.6rem + 0.75vw, 1.5rem);
     font-weight: 500;
+    gap:0 20px;
 }
-.Instagram::before {
-    content: '';
-    position: absolute;
-    background-image: url('/Instagram-icon.svg');
-    background-repeat: no-repeat;
-    width: 50px;
-    height: 50px;
-    bottom: -35%;
-    right: 41%;
-}
-.Telegram::before {
-    content: '';
-    position: absolute;
-    background-image: url('/Telegram.svg');
-    background-repeat: no-repeat;
-    width: 50px;
-    height: 50px;
-    right: -22%;
-    bottom: -45%;
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 @media(max-width:$tablet-width){
     .hero {
@@ -86,13 +71,12 @@
     .social {
         margin-top: 50px;
         transform: rotate(0);
+        gap: 20px;
+        
     }
-    .Instagram::before {
-        bottom: -70%;
-        right: 40%;
+    .icon{
+        margin-right: 0;
+        gap: 10px;
     }
-    .Telegram::before {
-        bottom: -70%;
-        right: -26%;
-    }
+  
 }

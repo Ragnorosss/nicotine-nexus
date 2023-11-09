@@ -24,20 +24,14 @@
         width: 100%;
     }
 
-    // .glide__track
-
-    &__track {
-    }
-
-    // .glide__slides
-
-    &__slides {
-    }
-
     // .glide__slide
 
     &__slide {
         text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         >h1{
             margin: 25px 0px;
         }
@@ -50,9 +44,6 @@
         justify-content: center;
     }
 
-    // .glide__bullet
-
-    
 }
 .storage + .price {
     margin: 25px 0px;

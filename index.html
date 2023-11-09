@@ -37,10 +37,13 @@
                   <a href="#about" class="menu__list-link">About us</a>
                 </li>
                 <li class="menu__list-item">
-                  <a href="#" class="menu__list-link">Market-place</a>
-                </li>
-                <li class="menu__list-item">
-                  <a href="#" class="menu__list-link">Contacts</a>
+                  <button id="showPopup">Показать надпись</button>
+                  <div id="popupOverlay" class="overlay">
+                      <div id="popupContent" class="popup">
+                          <span id="closePopup" class="close">&times;</span>
+                          <p>Cooming soon!</p>
+                      </div>
+                  </div>
                 </li>
               </ul>
           </nav>
@@ -56,10 +59,14 @@
                 <a href="#about" class="menu__list-link">About us</a>
               </li>
               <li class="menu__list-item">
-                <a href="#" class="menu__list-link">Market-place</a>
+                <a href="#" class="menu__list-link open-popup" >Market-place</a>
               </li>
               <li class="menu__list-item">
-                <a href="#" class="menu__list-link">Contacts</a>
+                <div class="popup__bg"> 
+                  <div class="popup">
+                    <span class="popup__logo">Cooming soon</span>  
+                  </div>
+              </div>  
               </li>
             </ul>
           </nav>
@@ -104,8 +111,8 @@
                 </div>
               </div>
                 <div class="social">
-                  <a href="#" class="icon Instagram">Instagram</a>
-                  <a href="#" class="icon Telegram">Telegram</a>
+                  <a href="#" class="icon">Instagram <img src="/Instagram-icon.svg" alt="Instagram icon" сlass=""></a>
+                  <a href="#" class="icon">Telegram <img src="/Telegram.svg" alt="Instagram icon" сlass=""></a>
                 </div>
             </div>
           </div>
@@ -113,92 +120,98 @@
       <section class="product" id="product">
         <h1 class="product__title">Product</h1>
         <div class="product__container">
-          <div class="product__sections">
-            <div class="product__section">
-              <div class="product__id">1</div>
-              <img src="/BC5000.png" alt="">
-              <div>
-                <h1>Elfbar BC 5000</h1>
-                <h2 class="product__section-price">&#x24;19.99</h2>
-                <h3 class="product__section-subtitle">Flavors:</h3>
-                <ul>
-                  <li>Blue Razz Ice</li> 
+          <div class="card__wrapper">
+            <div class="card">
+              <img src="/BC5000.png" alt="product Elf Bar" class="card__img">
+              <h1 class="card__title">Elfbar BC 5000</h1>
+              <p class="card__price">&#36;18.99</p>
+              <p class="card__info">In stock</p>
+              <div class="dropdown" id="menu1">
+                <div class="dropdown-btn">Favores</div>
+                <ul class="dropdown-content">
+                  <li>Blue Razz Ice</li>
                   <li>Watermelon BG</li>
                   <li>Strawberry Ice</li>
                   <li>Strawberry Kiwi</li>
                   <li>Peach Ice</li>
-                  <li>Strawberry Pina Colada </li>
+                  <li>Strawberry Pina Colada</li>
                   <li>Cranberry Grape</li>
-                  <li>Tripple Berry Ice </li>
-                  <li>Malibu  </li>
-                  <li>Lemon Mint  </li>
-                  <li>Mango Peach  </li>
-                  <li>Strawberry Watermelon  </li>
+                  <li>Tripple Berry Ice</li>
+                  <li>Malibu</li>
+                  <li>Lemon Mint</li>
+                  <li>Strawberry Watermelon</li>
+                  <li>Watermelon Bubble Gum</li>
+                  <li>Mango Peach</li>
+                  <li>Strawlemon Ice</li>
+                  <li>Strawberry Banana</li>
+                  <li>Bluberry Ice</li>
+                  <li>Triple Mango</li>
+                  <li>StrawBerry Mango</li>
                 </ul>
               </div>
             </div>
-            <div class="product__section">
-              <div class="product__id">2</div>
-              <img src="/Lost.png" alt="">
-              <div>
-                <h1>Elfbar Lost Mary</h1>
-                <h2 class="product__section-price">&#x24;17.99</h2>
-                <h3 class="product__section-subtitle">Вкусы</h3>
-                <ul>
-                    <li>Strawberry Pina Colada </li>
-                    <li>Strawberry Ice</li>
-                    <li>Watermelon Lemon</li>
-                    <li>Cherry Cola </li>
-                    <li>Strawberry Mango </li>
-                    <li>Strawberry Lemonade </li>
-                    <li>Blueberry Raspberry Peach </li>
-                    <li>Black Strawana </li>
-                    <li>Lemon Mint </li>
-                    <li>Strawberry Watermelon</li>
-                    <li>Peach Ice </li>
-                    <li>Pineapple Duo Ice </li>
+            <div class="card">
+              <img src="/Lost.png" alt="product Elf Bar" class="card__img">
+              <h1 class="card__title">Elfbar Lost Mary</h1>
+              <p class="card__price">&#36;17.99</p>
+              <p class="card__info">In stock</p>
+              <div class="dropdown">
+                <div class="dropdown-btn">Favores</div>
+                <ul class="dropdown-content">
+                  <li>Strawberry Pina Colada </li>
+                  <li>Strawberry Ice</li>
+                  <li>Watermelon Lemon</li>
+                  <li>Cherry Cola </li>
+                  <li>Strawberry Mango </li>
+                  <li>Strawberry Lemonade</li>
+                  <li>Blueberry Raspberry Peach /li>
+                  <li>Black Strawana</li>
+                  <li>Lemon Mint</li>
+                  <li>Strawberry Watermelon</li>
+                  <li>Peach Ice </li>
+                  <li>Pineapple Duo Ice</li>
                 </ul>
               </div>
             </div>
-            <div class="product__section">
-              <div class="product__id">3</div>
-              <img src="/fume-Infinity.png" alt="">
-              <div>
-                <h1>Fume Infinity</h1>
-                <h2 class="product__section-price">&#x24;15.99</h2>
-                <h3 class="product__section-subtitle">Вкусы</h3>
-                <ul>
-                  <li>Pina Colada </li>
+            <div class="card">
+              <img src="/fume-Infinity.png" alt="product Elf Bar" class="card__img">
+              <h1 class="card__title">Fume Infinity</h1>
+              <p class="card__price">&#36;15.99</p>
+              <p class="card__info">In stock</p>
+              <div class="dropdown">
+                <div class="dropdown-btn">Favores</div>
+                <ul class="dropdown-content">
+                  <li>Pina Colada</li>
                   <li>Strawberry Banana</li>
                   <li>Cottton Candy</li>
                   <li>Blue Razz</li>
                   <li>Banana Ice </li>
                   <li>Mint Ice </li>
                   <li>Lush Ice </li>
-                  <li>Rainbow Candy</li>
-                  <li>Purple Rain</li>
-                  <li>SBlueberry Mint</li>
-                  <li>Tropical Punch</li>
-              </ul>
+                  <li>Rainbow Candy </li>
+                  <li>Purple Rain </li>
+                  <li>Blueberry Mint </li>
+                  <li>Tropical Punch </li>
+                </ul>
               </div>
             </div>
-            <div class="product__section">
-              <div class="product__id">4</div>
-              <img src="/HQD-1.png" alt="">
-              <div>
-                <h1>HQD Cuvie Plus</h1>
-                <h2 class="product__section-price">&#x24;12.99</h2>
-                <h3 class="product__section-subtitle">Flavors</h3>
-                <ul>
-                  <li>Black Dragon</li>
+            <div class="card">
+              <img src="/HQD.png" alt="product Elf Bar" class="card__img">
+              <h1 class="card__title">HQD Cuvie Plus</h1>
+              <p class="card__price">&#36;12.99</p>
+              <p class="card__info">In stock</p>
+              <div class="dropdown">
+                <div class="dropdown-btn">Favores</div>
+                <ul class="dropdown-content">
+                  <li>Black Dragon </li>
                   <li>Apple Peach</li>
                   <li>Black Ice</li>
-                  <li>Big Smoke</li>
-                  <li>Banana Ice</li>
-                  <li>Blueberry</li>
-                  <li>Blueberry Lemonade</li>
-                  <li>Energy Drink</li>
-                  <li>Grapey</li>
+                  <li>Big Smoke </li>
+                  <li>Banana Ice </li>
+                  <li>Blueberry </li>
+                  <li>LBlueberry Lemonade </li>
+                  <li>Energy Drink </li>
+                  <li>Grapey </li>
                 </ul>
               </div>
             </div>
