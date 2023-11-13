@@ -1,0 +1,11 @@
+@import '/styles/var';
+.error-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.error-title{
+    font-weight: 800;
+    color: $default-text;
+}

@@ -3,7 +3,9 @@
 @import './styles/product';
 @import './styles/order';
 @import './styles/about';
+@import './styles/error.scss';
 @import './styles/footer';
+@import './styles/var';
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
 
@@ -41,4 +43,47 @@ body {
   max-width: 1440px;
   padding:0 10px;
   margin: 0 auto;
+}
+.popup-age {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  background-color: $backgroundColor;
+  border: 1px solid $primaryColor;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 800px;
+  min-height: 320px;
+  border-radius: 12px;
+  &__content {
+    text-align: center;
+    
+    h1{
+      margin-bottom: 20px;
+    }
+    button {
+      font-weight: 500;
+      font-size: 18px;
+      background-color: $backgroundColor;
+      margin: 20px;
+      padding: 13px;
+      cursor: pointer;
+      border: 1px solid $primaryColor;
+      color: $default-text;
+      border-radius: 6px;
+      width: 100%;
+      max-width: 200px;
+      transition: all 0.4s;
+      &:hover{
+        background-color: $primaryColor;
+      }
+    }
+  }
+
+  &.active {
+    display: block;
+  }
 }

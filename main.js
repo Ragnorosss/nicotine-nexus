@@ -1,6 +1,7 @@
 import './global.scss';
 import './slider';
 import './popup'
+import './popup-age'
 const smoothLinks = document.querySelectorAll('a[href^="#"]');
 for (let smoothLink of smoothLinks) {
     smoothLink.addEventListener('click', (e) => {
