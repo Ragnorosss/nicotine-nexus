@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
     // Отказывает в доступе при нажатии на кнопку "Нет"
     window.denyEntry = function () {
-        window.location.href = '/error.html';
+        window.location.href = './error.html';
     };
   });
   
