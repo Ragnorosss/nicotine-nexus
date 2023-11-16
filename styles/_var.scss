@@ -11,6 +11,10 @@ $laptop-width: 1440px;
 $coputer-width: 1920px;
 
 @mixin logo-styles {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 20px;
     animation: flicker 1.5s infinite alternate;
     color: #fff;  
     font-size: clamp(1.125rem, 0.9rem + 1.125vw, 2.25rem);

@@ -6,6 +6,7 @@
 @import './styles/error.scss';
 @import './styles/footer';
 @import './styles/var';
+@import './styles/svg';
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
 
@@ -58,11 +59,13 @@ body {
   max-width: 800px;
   min-height: 320px;
   border-radius: 12px;
+  overflow: auto;
   &__content {
     text-align: center;
     
     h1{
       margin-bottom: 20px;
+      font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
     }
     button {
       font-weight: 500;
@@ -85,5 +88,10 @@ body {
 
   &.active {
     display: block;
+  }
+}
+@media(max-width:375px) {
+  .popup-age{
+      top: 60%;
   }
 }
